@@ -8,7 +8,6 @@ import Navigation from "./navigation"
 
 import "../assets/scss/style.scss"
 import Footer from "./footer"
-import Theme from "../components/theme"
 
 const query = graphql`
   query LayoutQuery {
@@ -31,9 +30,6 @@ const Layout = ({ children, className, props }) => {
         <div sx={layoutStyle.nav}>
           <Navigation />
         </div>
-        <div sx={layoutStyle.appearance}>
-          <Theme />
-        </div>
       </Header>
       <main className={"container " + className}>{children}</main>
       <Footer />
@@ -44,11 +40,6 @@ const Layout = ({ children, className, props }) => {
 export default Layout
 
 const layoutStyle = {
-  appearance: {
-    display: ["none", "none", "none", "flex"],
-    alignItems: "center",
-    gap: 4,
-  },
   nav: {
     display: "flex",
     alignItems: "center",
