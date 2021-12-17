@@ -8,7 +8,9 @@ const Header = ({ children }) => (
       bg: "siteColor",
     }}
   >
-    {children}
+    <div className="header-container container">
+      {children}
+    </div>
   </header>
 )
 

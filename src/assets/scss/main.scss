@@ -1,0 +1,31 @@
+@import "theme-variables";
+@import "defaults";
+@import "lib/css-grid-utility";
+
+// ===========================
+// header
+// ===========================
+.site-header {
+  background: #000;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;    
+  }
+}
+
+// ===========================
+// footer
+// ===========================
+.site-footer {
+  background: #000;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;    
+  }
+}
